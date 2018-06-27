@@ -13,7 +13,9 @@ function moveDodgerLeft()
 
 function moveDodgerRight()
 {
-  var rightNumbers = dodger.style.right.replace('px', '');
+  var leftNumbers = dodger.style.left.replace('px', '');
+  var left = parseInt(leftNumbers, 10);
+  if(left < 400){}
 }
 
 document.addEventListener('keydown', function(e){
